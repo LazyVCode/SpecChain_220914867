@@ -2,11 +2,15 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
-      "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
-      ]
+      "theme": "Offline Meditation Downloads Failing",
+      "review_ids": ["rev_1", "rev_2", "rev_3", "rev_4", "rev_5", "rev_6", "rev_7", "rev_8", "rev_9", "rev_10"],
+      "example_reviews": ["Can't download sleepcasts.", "Offline mode doesn't work."]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Subscription Cancellation UI Obscured",
+      "review_ids": ["rev_11", "rev_12", "rev_13", "rev_14", "rev_15", "rev_16", "rev_17", "rev_18", "rev_19", "rev_20"],
+      "example_reviews": ["Hard to cancel.", "Kept getting billed after uninstall."]
     }
-  ]}
+  ]
+}
