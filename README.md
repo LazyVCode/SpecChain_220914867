@@ -1,33 +1,19 @@
-# EECS4312_W26_SpecChain
+# EECS4312_W26_SpecChain - Headspace Requirements Pipeline
 
-## instructions:
-Please update to include: 
-- App name
-- Data collection method
-- Original dataset
-- Final cleaned dataset
-- Exact commands to run pipeline
+**Application Analyzed:** Headspace
+**Dataset Size:** 1,500 collected reviews, thoroughly cleaned.
 
-# example
-Application: [Calm]
+### Repository Structure
+- `data/` : JSON datasets and manual/auto/hybrid review groupings.
+- `personas/` : User personas generated across the three pipelines.
+- `spec/` : Requirements specifications in Markdown format.
+- `tests/` : Validation test suites mapped to requirements.
+- `metrics/` : Computed performance metrics for pipeline comparison.
+- `src/` : Python execution scripts.
+- `prompts/` : Saved LLM prompt configurations.
+- `reflection/` : Final analytical reflection.
 
-Dataset:
-- reviews_raw.jsonl contains the collected reviews.
-- reviews_clean.jsonl contains the cleaned dataset.
-- The cleaned dataset contains 842 reviews.
-
-Repository Structure:
-- data/ contains datasets and review groups
-- personas/ contains persona files
-- spec/ contains specifications
-- tests/ contains validation tests
-- metrics/ contains all metric files
-- src/ contains executable Python scripts
-- reflection/ contains the final reflection
-
-How to Run:
-1. python src/00_validate_repo.py
-2. python src/02_clean.py
-3. python src/run_all.py
-4. Open metrics/metrics_summary.json for comparison results
-
+### Execution Instructions
+1. Install dependencies: `pip install google-play-scraper pandas nltk groq`
+2. Set API Key: `export GROQ_API_KEY="your_api_key_here"`
+3. Run the automated pipeline: `python src/run_all.py`
