@@ -1,22 +1,26 @@
-{  "personas": [
+{
+  "personas": [
     {
       "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
+      "name": "The Commuter",
+      "description": "User who needs offline access on the subway.",
       "derived_from_group": "G1",
-      "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
-      "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
-      "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
-      "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
-      "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+      "goals": ["Listen to daily meditation without internet"],
+      "pain_points": ["Downloads stuck loading"],
+      "context": ["In transit"],
+      "constraints": ["Must work in Airplane mode"],
+      "evidence_reviews": ["rev_1", "rev_2"]
+    },
+    {
+      "id": "P2",
+      "name": "The Budget Conscious User",
+      "description": "User trying the free trial who wants to avoid accidental charges.",
+      "derived_from_group": "G2",
+      "goals": ["Cancel easily before trial ends"],
+      "pain_points": ["Hidden cancel buttons"],
+      "context": ["Managing finances on mobile"],
+      "constraints": ["Clear UI paths required"],
+      "evidence_reviews": ["rev_11", "rev_12"]
+    }
+  ]
+}
