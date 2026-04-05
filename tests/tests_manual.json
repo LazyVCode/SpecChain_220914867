@@ -1,16 +1,18 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
-      "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
-      "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
-      ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "test_id": "T_M1_A",
+      "requirement_id": "FR_M1",
+      "scenario": "Successful offline download",
+      "steps": ["Open session", "Click Download", "Turn off WiFi", "Play session"],
+      "expected_result": "Session plays normally offline."
+    },
+    {
+      "test_id": "T_M2_A",
+      "requirement_id": "FR_M2",
+      "scenario": "Finding the cancel button",
+      "steps": ["Navigate to Settings", "Click Account", "Locate Subscription info"],
+      "expected_result": "Cancel button is immediately visible."
     }
   ]
 }
