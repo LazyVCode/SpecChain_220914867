@@ -15,5 +15,5 @@
 
 ### Execution Instructions
 1. Install dependencies: `pip install google-play-scraper pandas nltk groq`
-2. Set API Key: `export GROQ_API_KEY="your_api_key_here"`
-3. Run the automated pipeline: `python src/run_all.py`
+2. Set API Key: `export GROQ_API_KEY="Add_your_api_key_here"`
+3. Run the automated pipeline: `python3.11 src/run_all.py`
