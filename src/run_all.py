@@ -1,15 +1,19 @@
-"""runs the full pipeline end-to-end"""
 import os
+import sys
 
 def run_pipeline():
-    print("Starting Pipeline execution...")
-    os.system("python src/01_collect_or_import.py") # Collect data
-    os.system("python src/02_clean.py")             # Clean data
-    os.system("python src/05_personas_auto.py")     # Generate auto personas
-    os.system("python src/06_spec_generate.py")     # Generate auto specs
-    os.system("python src/07_tests_generate.py")    # Generate auto tests
-    os.system("python src/08_metrics.py")           # Compute metrics
-    os.system("python src/00_validate_repo.py")     # Validate output
+    # sys.executable automatically finds the exact Python version you are running
+    python_exec = sys.executable 
+    
+    print(f"Starting Pipeline execution using: {python_exec}")
+    os.system(f"{python_exec} src/01_collect_or_import.py") 
+    os.system(f"{python_exec} src/02_clean.py")             
+    os.system(f"{python_exec} src/05_personas_auto.py")     
+    os.system(f"{python_exec} src/06_spec_generate.py")     
+    os.system(f"{python_exec} src/07_tests_generate.py")    
+    os.system(f"{python_exec} src/08_metrics.py")           
+    os.system(f"{python_exec} src/00_validate_repo.py")     
     print("Pipeline execution completed.")
 
-if __name__ == "__main__": run_pipeline()
+if __name__ == "__main__": 
+    run_pipeline()
